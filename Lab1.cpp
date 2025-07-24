@@ -78,8 +78,14 @@ int main(){
      cout << "The average age of this class is : " << avg << endl ; 
      cout << "_________________________________________________________________" << endl; 
 
+     for(int i = 0 ; i < 5 ; i++ ){
 
+      cout << "So number  " << i << " loop " << endl; 
 
+     } 
+    
+      cout << "End of the loop " << endl ;
+ 
     
     return 0; 
 
