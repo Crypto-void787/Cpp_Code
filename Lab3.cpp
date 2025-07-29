@@ -1,3 +1,5 @@
+// Making a table using diagonal matrix 
+
 
 #include<iostream>
 using namespace std;
