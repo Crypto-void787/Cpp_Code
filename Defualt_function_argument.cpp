@@ -1,3 +1,7 @@
+/*---> General but important info : parameters are values that we give to function like they are found in 
+function as function headers while that of arguments are the value that passed to functio n while invoking it */
+
+
 #include<iostream>
 using namespace std; 
   
