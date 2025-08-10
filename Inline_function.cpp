@@ -3,7 +3,11 @@ Meanwhile when we r doing simple calculations like additions multipilication we 
 To make a fiunction an inline function we use "Inline keyword" Just put inline before finction and next 
 moment its an inline function */
 
+/*if our function containing loop or goto values orr its a returning function then we shouldn't use an 
+inline function or if our function have static values or if its a recursive function then we cant use an 
+inline function */ 
 
+ 
 #include<iostream>
 using namespace std; 
 

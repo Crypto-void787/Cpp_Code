@@ -1,5 +1,9 @@
 #include<iostream>
 using namespace std; 
+
+// If we pass two parameters in this macro n then we call it in our main finction the first value will be accurate
+//  But the next value inc two time its the nature of the macros 
+ 
 #define square(x) ((x)*(x));
 #define PI 3.14 
 
