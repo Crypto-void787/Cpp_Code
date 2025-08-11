@@ -17,7 +17,7 @@
       }
        
       //Creating a template ---> basically it automatically convert is data-type according to value 
-      template <class K>
+      template <class K>  
       //another constructor using template
       Lovers(K a)
       {
@@ -28,6 +28,29 @@
 
  }; 
 
+ //Declaring a class with a specific data_type like we can only use that class for that specified data_Type 
+  // Base template
+template <class T>
+class Char_type
+{
+    public:
+        Char_type(T x)
+       {
+             cout << x << " is NOT a char.\n";
+       }
+};
+
+// Specialization for char
+template <>
+class Char_type<char>
+{
+     public:
+         Char_type(char x)
+        {
+             cout << x << " is a character . . . !! " << endl;
+        }
+};
+
  int main()
  { 
      cout << "\n*******************************" << endl ;  
@@ -35,6 +58,12 @@
      cout << "\n*******************************" << endl ;  
      Lovers L2("two") ; // using template constructor 
       cout << "\n*******************************" << endl ;  
+     Char_type<char> x1('e'); // template type inside <>
+     cout << "\n*******************************" << endl ;  
 
     return 0 ;     
  }
+  
+ // We can make template within class But in case if dont wanna make it like tha we can make a global tempalte 😅 n then whenever we
+//  gonna use it we have to declare the data_type first  
+//  Like  ---->  Lovers (int) L1(3) ;    
