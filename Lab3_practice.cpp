@@ -1,46 +1,49 @@
 #include<iostream>
 using namespace std; 
-
- void Diagonal_display(int rows , int cols ){
+ 
+ void Diagonal_matrix(int row , int col) 
+   {
+       for(int i = 0 ; i < row ; i++ )
+       {  
           
-      for(int i = 1 ; i <= rows ; i++ )
-      {
-          
-           for(int j = 0 ; j <= cols ; j++ )
-           {
-               if( i == j ) 
-               {
-                   cout << i << " "  ;
-               } 
-            else 
+         for(int j = 0 ; j < col ; j++ ) 
+         {
+              if (i == j ) 
               {
-                 cout << "0 " ; 
+                cout << i << " " ; 
               }
-             
-           }
-            cout << " \n " ; 
-      } 
- }
+              else 
+              {
+                 cout << "0 " ;   
+              }
+         }
+          cout << endl ;
+       }
+   }
 int main(){ 
-    int rows ; 
-    int cols ; 
-     
-     cout << "Enter the Row number  :  " ; 
-     cin >> rows ; 
-     
-     cout << "Enter the column number  : " ;
-     cin >> cols ; 
       
-     if(rows == cols )
+     int row ; 
+    int col ; 
+      
+    //Taking number of rows and coloumn from user 
+     cout << "Enter number of rows : " ; 
+     cin >> row ; 
+     cout << "\nEnter number of column : " ; 
+      cin >> col ;
+       
+      //Applying logic 
+     if (row==col)
+     { 
+         cout << endl ; 
+         cout << endl ; 
+          cout << "The matrix is given as : " << endl ; 
+
+         Diagonal_matrix(row , col) ; 
+
+     } 
+    else 
     {
-       cout << "Diagonal matrix representation " << endl ; 
-        Diagonal_display(rows , cols ); 
-         
-    } 
-       else 
-    { 
-        cout << "Sorry dude! Rows and column are not same 😒" << endl ; 
-    } 
-      
+         cout << "Make sure number of rows and columns should same " << endl ;  
+    }
     return 0 ;
 }
