@@ -7,6 +7,8 @@ using namespace std;
 #define square(x) ((x)*(x));
 #define PI 3.14 
 
+// #define BIN 010 
+
 int main(){
      int radius = 5 ; 
        cout << "Area of the circle is :  " << PI * radius*radius ;  
@@ -16,7 +18,7 @@ int main(){
      cout << "The square of x is : " << square(x)  ;    
      cout << "\nThe square of x is : " << square(x+2) ; 
      cout << "\nThe square of x is : " << square(x*2) ; 
-        
+        // cout << "\nThe value of bin : " << BIN << endl; 
      
 
     return 0 ; 

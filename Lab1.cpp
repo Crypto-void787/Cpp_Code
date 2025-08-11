@@ -16,7 +16,8 @@ int main(){
          cin >> age ; 
          Total_age += age ; 
           
-    }
+    } 
+     
      cout << "-----------------------------------" << endl ;
       cout << "The average age of students : " << Total_age / 10 << endl ; 
  

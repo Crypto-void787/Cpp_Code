@@ -50,6 +50,28 @@ class Char_type<char>
              cout << x << " is a character . . . !! " << endl;
         }
 };
+ //Base template 
+template <class T>
+class Float_type
+{ 
+
+    public: 
+        Float_type(T h) 
+        { 
+            cout << "Nope its not float ... !!" << endl ;
+        }
+}; 
+
+template <>
+class Float_type<float>
+{ 
+
+    public: 
+        Float_type(float h) 
+        { 
+            cout << "Yupp its float ... !!" << endl ;
+        }
+}; 
 
  int main()
  { 
@@ -58,9 +80,12 @@ class Char_type<char>
      cout << "\n*******************************" << endl ;  
      Lovers L2("two") ; // using template constructor 
       cout << "\n*******************************" << endl ;  
-     Char_type<char> x1('e'); // template type inside <>
+     Char_type<char> x1('e');  // template type inside <>
      cout << "\n*******************************" << endl ;  
-
+     Float_type<float> d1(4.55) ; 
+     Float_type<float> d2(5) ; 
+     
+     
     return 0 ;     
  }
   

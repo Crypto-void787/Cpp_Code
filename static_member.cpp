@@ -1,3 +1,5 @@
+// There is only one value of the static data member for every object no matter what 
+
 #include <iostream>
 using namespace std;
 
