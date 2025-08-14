@@ -3,9 +3,15 @@
  #include<iostream> 
  using namespace std; 
  int main()
-{   
+{     
+     
+     char T ; 
+     cout << "Give char of u wanna get ASCII : "  ; 
+     cin >> T ; 
+     cout << "\n ASCII of " << T << " is : " << (int)T << endl ; 
+       
 
-     cout << " ASCII for small alphabets  . . . !! " << endl ; 
+     cout << "\n ASCII for small alphabets  . . . !! " << endl ; 
 
      char a = 'a' ; 
      char b = 'b' ; 
