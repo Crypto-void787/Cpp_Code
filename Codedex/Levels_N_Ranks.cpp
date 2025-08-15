@@ -1,6 +1,7 @@
  
   // Arithmatic operator  (+ , - , / , * , % )
   // Relational operator (+= , -= , != , == , > , >= , < , <= ) 
+  // Logical operator (& , | , ! )
 
   #include <iostream>
 using namespace std;
