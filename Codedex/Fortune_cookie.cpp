@@ -32,7 +32,7 @@ which is usually a Chinese phrase with translation and a list of lucky numbers. 
            cout << "Be the person u wanna have when you are a kid." << endl ;
       }
 
-      else if(Luck = 3) 
+      else if(Luck == 3) 
       {
            cout << "Focus like a sniper, work like a hacker." << endl ; 
       }
