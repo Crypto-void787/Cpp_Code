@@ -1,10 +1,4 @@
-
-// Random number (5 slots) 
-//    -----> under each random number competitor will get different set of question 
-//    -----> each set contains different questions 
-//     ----> question will be in M.C.Q format (take answer from gamer) 
-//      ---->  show score  ( false answer later) 
- 
+// Trivia game is where competitors are asked questions about interesting but unimportant facts in many subjects. 
 
 
 #include<iostream>
