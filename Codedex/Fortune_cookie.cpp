@@ -67,6 +67,15 @@ which is usually a Chinese phrase with translation and a list of lucky numbers. 
             cout << "Focus on what truly matters." << endl ; 
       }
 
+ 
+      //generating luck numbers 
 
+      cout << "\nLucky numbers: ";
+    for(int i = 0; i < 6; i++) 
+    { 
+      cout << rand() % 51 << " "; // 0 to 50
+
+    }
+     cout << endl;
       return 0 ; 
    }
