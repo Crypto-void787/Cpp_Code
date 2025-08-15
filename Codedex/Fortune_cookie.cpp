@@ -2,7 +2,9 @@
  
   // rand() ---> c++ has an amazing function to generatae random value 
   // cstdlib ----> The library use for rand() function 
-
+  /*  ctime ---> To make sure every time you run the program, you get a new random number,
+   you will need to “seed” the random number generator before the declaration of the variable */ 
+   
    #include<iostream> 
    #include<cstdlib>
    #include<ctime>
